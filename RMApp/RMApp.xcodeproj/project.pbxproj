@@ -12,6 +12,15 @@
 		BD6DBD7E2B862EEB00E349CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6DBD7D2B862EEB00E349CA /* Assets.xcassets */; };
 		BD6DBD812B862EEB00E349CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6DBD802B862EEB00E349CA /* Preview Assets.xcassets */; };
 		BD6DBD892B862F7B00E349CA /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = BD6DBD882B862F7B00E349CA /* Dependencies */; };
+		BD6DBD8E2B86320200E349CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DBD7B2B862EE900E349CA /* ContentView.swift */; };
+		BD6DBD8F2B86320200E349CA /* RMAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DBD792B862EE900E349CA /* RMAppApp.swift */; };
+		BD6DBD912B86320200E349CA /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = BD6DBD8C2B86320200E349CA /* Dependencies */; };
+		BD6DBD932B86320200E349CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6DBD802B862EEB00E349CA /* Preview Assets.xcassets */; };
+		BD6DBD942B86320200E349CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6DBD7D2B862EEB00E349CA /* Assets.xcassets */; };
+		BD6DBD9A2B86322100E349CA /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DBD992B86322100E349CA /* Assembly.swift */; };
+		BD6DBD9C2B86322A00E349CA /* AssemblyShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DBD9B2B86322A00E349CA /* AssemblyShared.swift */; };
+		BD6DBDA02B86325E00E349CA /* AssemblyMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DBD9D2B86323000E349CA /* AssemblyMocks.swift */; };
+		BD6DBDA12B86326100E349CA /* AssemblyShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DBD9B2B86322A00E349CA /* AssemblyShared.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +29,10 @@
 		BD6DBD7B2B862EE900E349CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BD6DBD7D2B862EEB00E349CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD6DBD802B862EEB00E349CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BD6DBD982B86320200E349CA /* RMAppMocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RMAppMocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD6DBD992B86322100E349CA /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		BD6DBD9B2B86322A00E349CA /* AssemblyShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyShared.swift; sourceTree = "<group>"; };
+		BD6DBD9D2B86323000E349CA /* AssemblyMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyMocks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +41,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD6DBD892B862F7B00E349CA /* Dependencies in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD6DBD902B86320200E349CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD6DBD912B86320200E349CA /* Dependencies in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				BD6DBD762B862EE900E349CA /* RMApp.app */,
+				BD6DBD982B86320200E349CA /* RMAppMocks.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,6 +77,7 @@
 			children = (
 				BD6DBD792B862EE900E349CA /* RMAppApp.swift */,
 				BD6DBD7B2B862EE900E349CA /* ContentView.swift */,
+				BD6DBD8A2B8631E900E349CA /* Assemblies */,
 				BD6DBD7D2B862EEB00E349CA /* Assets.xcassets */,
 				BD6DBD7F2B862EEB00E349CA /* Preview Content */,
 			);
@@ -67,6 +90,16 @@
 				BD6DBD802B862EEB00E349CA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BD6DBD8A2B8631E900E349CA /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				BD6DBD992B86322100E349CA /* Assembly.swift */,
+				BD6DBD9B2B86322A00E349CA /* AssemblyShared.swift */,
+				BD6DBD9D2B86323000E349CA /* AssemblyMocks.swift */,
+			);
+			path = Assemblies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +123,26 @@
 			);
 			productName = RMApp;
 			productReference = BD6DBD762B862EE900E349CA /* RMApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD6DBD8B2B86320200E349CA /* RMAppMocks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD6DBD952B86320200E349CA /* Build configuration list for PBXNativeTarget "RMAppMocks" */;
+			buildPhases = (
+				BD6DBD8D2B86320200E349CA /* Sources */,
+				BD6DBD902B86320200E349CA /* Frameworks */,
+				BD6DBD922B86320200E349CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RMAppMocks;
+			packageProductDependencies = (
+				BD6DBD8C2B86320200E349CA /* Dependencies */,
+			);
+			productName = RMApp;
+			productReference = BD6DBD982B86320200E349CA /* RMAppMocks.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -124,6 +177,7 @@
 			projectRoot = "";
 			targets = (
 				BD6DBD752B862EE900E349CA /* RMApp */,
+				BD6DBD8B2B86320200E349CA /* RMAppMocks */,
 			);
 		};
 /* End PBXProject section */
@@ -138,6 +192,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BD6DBD922B86320200E349CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD6DBD932B86320200E349CA /* Preview Assets.xcassets in Resources */,
+				BD6DBD942B86320200E349CA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -146,7 +209,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD6DBD7C2B862EE900E349CA /* ContentView.swift in Sources */,
+				BD6DBD9A2B86322100E349CA /* Assembly.swift in Sources */,
+				BD6DBD9C2B86322A00E349CA /* AssemblyShared.swift in Sources */,
 				BD6DBD7A2B862EE900E349CA /* RMAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD6DBD8D2B86320200E349CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD6DBD8E2B86320200E349CA /* ContentView.swift in Sources */,
+				BD6DBDA02B86325E00E349CA /* AssemblyMocks.swift in Sources */,
+				BD6DBDA12B86326100E349CA /* AssemblyShared.swift in Sources */,
+				BD6DBD8F2B86320200E349CA /* RMAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +408,66 @@
 			};
 			name = Release;
 		};
+		BD6DBD962B86320200E349CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RMApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 8S5QQT5ZUQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matoosens.RMApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD6DBD972B86320200E349CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RMApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 8S5QQT5ZUQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matoosens.RMApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -353,6 +489,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		BD6DBD952B86320200E349CA /* Build configuration list for PBXNativeTarget "RMAppMocks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD6DBD962B86320200E349CA /* Debug */,
+				BD6DBD972B86320200E349CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
@@ -364,6 +509,10 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		BD6DBD882B862F7B00E349CA /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Dependencies;
+		};
+		BD6DBD8C2B86320200E349CA /* Dependencies */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Dependencies;
 		};
