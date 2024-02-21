@@ -6,3 +6,27 @@
 //
 
 import Foundation
+
+public protocol ClientInterface {
+    func fetch(urlString: String) async throws -> Data
+    
+    func fetch<Endpoint: EndpointInterface, Response: Decodable>(
+        _ baseURLString: String,
+        endpoint: Endpoint
+    ) async throws -> Response
+}
+
+public protocol EndpointInterface {
+    var components: [String] { get }
+    var parameters: [String: Any] { get }
+    static var base: String { get }
+}
+
+public enum HTTPError: Error {
+    case invalidURL
+    case networkError(Error)
+    case invalidResponse
+    case invalidStatusCode(Int)
+    case invalidDecoding(Error)
+    case invalidParameters
+}
