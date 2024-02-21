@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		BD6DBD7C2B862EE900E349CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DBD7B2B862EE900E349CA /* ContentView.swift */; };
 		BD6DBD7E2B862EEB00E349CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6DBD7D2B862EEB00E349CA /* Assets.xcassets */; };
 		BD6DBD812B862EEB00E349CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6DBD802B862EEB00E349CA /* Preview Assets.xcassets */; };
+		BD6DBD892B862F7B00E349CA /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = BD6DBD882B862F7B00E349CA /* Dependencies */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD6DBD892B862F7B00E349CA /* Dependencies in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = RMApp;
+			packageProductDependencies = (
+				BD6DBD882B862F7B00E349CA /* Dependencies */,
+			);
 			productName = RMApp;
 			productReference = BD6DBD762B862EE900E349CA /* RMApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = BD6DBD6D2B862EE900E349CA;
+			packageReferences = (
+				BD6DBD872B862F7B00E349CA /* XCLocalSwiftPackageReference "../Dependencies" */,
+			);
 			productRefGroup = BD6DBD772B862EE900E349CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -280,6 +288,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +318,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,6 +354,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		BD6DBD872B862F7B00E349CA /* XCLocalSwiftPackageReference "../Dependencies" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Dependencies;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BD6DBD882B862F7B00E349CA /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Dependencies;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BD6DBD6E2B862EE900E349CA /* Project object */;
 }
