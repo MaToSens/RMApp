@@ -18,7 +18,8 @@ struct MainView: View {
                 CharacterListView()
                     .tabItem { Label("Characters", systemImage: "square.grid.2x2.fill") }
                 
-                // FavoriteView
+                FavoriteView()
+                    .tabItem { Label("Favorite", systemImage: "star") }
             }
         }
     }
