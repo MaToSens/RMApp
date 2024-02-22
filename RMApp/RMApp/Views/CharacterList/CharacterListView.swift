@@ -53,7 +53,7 @@ struct CharacterListView: View {
         ScrollView {
             LazyVGrid(columns: columns) {
                 CharacterList(characters: characters) { character in
-                    CharacterDetailsView(character: character)
+                    CharacterDetailsView(character)
                 }
                 
                 buildLoadingIndicatorView()

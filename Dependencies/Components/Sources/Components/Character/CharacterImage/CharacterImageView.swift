@@ -8,25 +8,23 @@
 import PortalGunInterface
 import SwiftUI
 
-struct CharacterImageView: View {
+public struct CharacterImageView: View {
     @StateObject private var viewModel: CharacterImageViewModel
     
-    init(_ character: RMCharacter) {
+    public init(_ character: RMCharacter) {
         _viewModel = StateObject(wrappedValue: CharacterImageViewModel(character))
     }
     
-    var body: some View {
-        ZStack {
-            switch viewModel.state {
-            case .loading:
-                ProgressView()
-            case .loaded(let uiImage):
-                Image(uiImage: uiImage)
-                    .resizable()
-                    .scaledToFill()
-            case .error:
-                Image(systemName: "questionmark")
-            }
+    public var body: some View {
+        switch viewModel.state {
+        case .loading:
+            ProgressView()
+        case .loaded(let uiImage):
+            Image(uiImage: uiImage)
+                .resizable()
+                .scaledToFill()
+        case .error:
+            Image(systemName: "questionmark")
         }
     }
 }

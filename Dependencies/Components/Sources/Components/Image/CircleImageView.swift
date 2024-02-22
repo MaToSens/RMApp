@@ -15,7 +15,7 @@ public struct CircleImageView: View {
     }
     
     public var body: some View {
-        Image(systemName: "eye")
+        Image(systemName: systemName)
             .font(.headline)
             .padding(10)
             .background(
