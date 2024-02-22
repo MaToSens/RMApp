@@ -5,6 +5,7 @@
 //  Created by MaTooSens on 21/02/2024.
 //
 
+import Design
 import DependencyInjection
 import Foundation
 import SwinjectStoryboard
@@ -18,6 +19,6 @@ extension SwinjectStoryboard {
 
 final class AssemblyShared {
     static func setupDependnecies() {
-        // Inject here
+        AppFont.registerFonts()
     }
 }
