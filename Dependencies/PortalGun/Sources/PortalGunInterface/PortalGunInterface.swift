@@ -10,6 +10,7 @@ import SwiftUI
 public protocol PortalGunManagerInterface {
     func fetchCharacters(page: Int) async throws -> [RMCharacter]
     func fetchCharacterImage(for character: RMCharacter) async throws -> UIImage
+    func updateFavoriteStatus(for character: RMCharacter) async throws -> RMCharacter
 }
 
 // MARK: Data Providers Interface
