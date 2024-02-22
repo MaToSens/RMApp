@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD01AE882B86F0F50094953C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD01AE872B86F0F50094953C /* MainView.swift */; };
 		BD6DBD7A2B862EE900E349CA /* RMAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DBD792B862EE900E349CA /* RMAppApp.swift */; };
-		BD6DBD7C2B862EE900E349CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DBD7B2B862EE900E349CA /* ContentView.swift */; };
 		BD6DBD7E2B862EEB00E349CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6DBD7D2B862EEB00E349CA /* Assets.xcassets */; };
 		BD6DBD812B862EEB00E349CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6DBD802B862EEB00E349CA /* Preview Assets.xcassets */; };
 		BD6DBD892B862F7B00E349CA /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = BD6DBD882B862F7B00E349CA /* Dependencies */; };
-		BD6DBD8E2B86320200E349CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DBD7B2B862EE900E349CA /* ContentView.swift */; };
 		BD6DBD8F2B86320200E349CA /* RMAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DBD792B862EE900E349CA /* RMAppApp.swift */; };
 		BD6DBD912B86320200E349CA /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = BD6DBD8C2B86320200E349CA /* Dependencies */; };
 		BD6DBD932B86320200E349CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6DBD802B862EEB00E349CA /* Preview Assets.xcassets */; };
@@ -21,18 +20,26 @@
 		BD6DBD9C2B86322A00E349CA /* AssemblyShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DBD9B2B86322A00E349CA /* AssemblyShared.swift */; };
 		BD6DBDA02B86325E00E349CA /* AssemblyMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DBD9D2B86323000E349CA /* AssemblyMocks.swift */; };
 		BD6DBDA12B86326100E349CA /* AssemblyShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DBD9B2B86322A00E349CA /* AssemblyShared.swift */; };
+		BD6DBDAE2B86D74700E349CA /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DBDAD2B86D74700E349CA /* CharacterListViewModel.swift */; };
+		BD6DBDB02B86D85C00E349CA /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DBDAF2B86D85C00E349CA /* CharacterListView.swift */; };
+		BD6DBDB32B86E8D300E349CA /* CharacterDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DBDB22B86E8D300E349CA /* CharacterDetailsViewModel.swift */; };
+		BD6DBDB52B86E8DF00E349CA /* CharacterDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DBDB42B86E8DF00E349CA /* CharacterDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD01AE872B86F0F50094953C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BD6DBD762B862EE900E349CA /* RMApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RMApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6DBD792B862EE900E349CA /* RMAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMAppApp.swift; sourceTree = "<group>"; };
-		BD6DBD7B2B862EE900E349CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BD6DBD7D2B862EEB00E349CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD6DBD802B862EEB00E349CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BD6DBD982B86320200E349CA /* RMAppMocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RMAppMocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6DBD992B86322100E349CA /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
 		BD6DBD9B2B86322A00E349CA /* AssemblyShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyShared.swift; sourceTree = "<group>"; };
 		BD6DBD9D2B86323000E349CA /* AssemblyMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyMocks.swift; sourceTree = "<group>"; };
+		BD6DBDAD2B86D74700E349CA /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
+		BD6DBDAF2B86D85C00E349CA /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
+		BD6DBDB22B86E8D300E349CA /* CharacterDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewModel.swift; sourceTree = "<group>"; };
+		BD6DBDB42B86E8DF00E349CA /* CharacterDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD01AE862B86F0E70094953C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BD01AE872B86F0F50094953C /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		BD6DBD6D2B862EE900E349CA = {
 			isa = PBXGroup;
 			children = (
@@ -76,8 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				BD6DBD792B862EE900E349CA /* RMAppApp.swift */,
-				BD6DBD7B2B862EE900E349CA /* ContentView.swift */,
 				BD6DBD8A2B8631E900E349CA /* Assemblies */,
+				BD6DBDAB2B86D73400E349CA /* Views */,
 				BD6DBD7D2B862EEB00E349CA /* Assets.xcassets */,
 				BD6DBD7F2B862EEB00E349CA /* Preview Content */,
 			);
@@ -100,6 +115,34 @@
 				BD6DBD9D2B86323000E349CA /* AssemblyMocks.swift */,
 			);
 			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		BD6DBDAB2B86D73400E349CA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BD01AE862B86F0E70094953C /* Main */,
+				BD6DBDAC2B86D73D00E349CA /* CharacterList */,
+				BD6DBDB12B86E8B800E349CA /* CharacterDetails */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BD6DBDAC2B86D73D00E349CA /* CharacterList */ = {
+			isa = PBXGroup;
+			children = (
+				BD6DBDAF2B86D85C00E349CA /* CharacterListView.swift */,
+				BD6DBDAD2B86D74700E349CA /* CharacterListViewModel.swift */,
+			);
+			path = CharacterList;
+			sourceTree = "<group>";
+		};
+		BD6DBDB12B86E8B800E349CA /* CharacterDetails */ = {
+			isa = PBXGroup;
+			children = (
+				BD6DBDB42B86E8DF00E349CA /* CharacterDetailsView.swift */,
+				BD6DBDB22B86E8D300E349CA /* CharacterDetailsViewModel.swift */,
+			);
+			path = CharacterDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,7 +251,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD6DBD7C2B862EE900E349CA /* ContentView.swift in Sources */,
+				BD6DBDB32B86E8D300E349CA /* CharacterDetailsViewModel.swift in Sources */,
+				BD01AE882B86F0F50094953C /* MainView.swift in Sources */,
+				BD6DBDB02B86D85C00E349CA /* CharacterListView.swift in Sources */,
+				BD6DBDAE2B86D74700E349CA /* CharacterListViewModel.swift in Sources */,
+				BD6DBDB52B86E8DF00E349CA /* CharacterDetailsView.swift in Sources */,
 				BD6DBD9A2B86322100E349CA /* Assembly.swift in Sources */,
 				BD6DBD9C2B86322A00E349CA /* AssemblyShared.swift in Sources */,
 				BD6DBD7A2B862EE900E349CA /* RMAppApp.swift in Sources */,
@@ -219,7 +266,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD6DBD8E2B86320200E349CA /* ContentView.swift in Sources */,
 				BD6DBDA02B86325E00E349CA /* AssemblyMocks.swift in Sources */,
 				BD6DBDA12B86326100E349CA /* AssemblyShared.swift in Sources */,
 				BD6DBD8F2B86320200E349CA /* RMAppApp.swift in Sources */,

@@ -9,7 +9,9 @@ import BackendInterface
 import Foundation
 
 fileprivate struct PathBuilder {
-    static func buildURL<Endpoint: EndpointInterface>(_ baseURLString: String, endpoint: Endpoint) throws -> URL {
+    private static let baseURLString: String = "https://rickandmortyapi.com/api"
+    
+    static func buildURL<Endpoint: EndpointInterface>(endpoint: Endpoint) throws -> URL {
         let path = buildPath(from: endpoint)
         
         guard let url = URL(
@@ -40,11 +42,8 @@ extension URLSession {
         return try await fetchData(from: url)
     }
     
-    static func downloadData<Endpoint: EndpointInterface>(
-        _ baseURLString: String,
-        endpoint: Endpoint
-    ) async throws -> Data {
-        let url = try PathBuilder.buildURL(baseURLString, endpoint: endpoint)
+    static func downloadData<Endpoint: EndpointInterface>(endpoint: Endpoint) async throws -> Data {
+        let url = try PathBuilder.buildURL(endpoint: endpoint)
         return try await fetchData(from: url)
     }
     

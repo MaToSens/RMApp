@@ -10,6 +10,6 @@ import DependencyInjection
 
 extension Assemblies {
     static func setupDependencies() {
-        // Inject
+        PortalGun.Dependencies.inject()
     }
 }

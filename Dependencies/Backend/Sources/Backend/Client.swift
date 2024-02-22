@@ -13,12 +13,16 @@ final class Client: ClientInterface {
         try await URLSession.downloadData(urlString)
     }
     
-    func fetch<Endpoint: EndpointInterface, Response: Decodable>(
-        _ baseURLString: String,
-        endpoint: Endpoint
-    ) async throws -> Response {
-        let data = try await URLSession.downloadData(baseURLString, endpoint: endpoint)
+    func fetch<Endpoint: EndpointInterface, Response: Decodable>(endpoint: Endpoint) async throws -> Response {
+        let data = try await URLSession.downloadData(endpoint: endpoint)
         return try JSONDecoder().decode(Response.self, from: data)
+    }
+    
+    func fetchObjects<Endpoint: EndpointInterface, Response: Decodable>(endpoint: Endpoint) async throws -> [Response] {
+        let data = try await URLSession.downloadData(endpoint: endpoint)
+        let decoder = JSONDecoder(withKeyDecodingStrategy: .convertFromSnakeCase)
+        
+        return try decoder.decode([Response].self, from: data)
     }
 }
 
