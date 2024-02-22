@@ -97,5 +97,3 @@ extension DatabaseManager: DatabaseManagerInterface {
         return objectsDAO.map { DAOFactory.initializeObject(from: $0) }
     }
 }
-
-

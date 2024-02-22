@@ -93,3 +93,10 @@ extension PortalGunManager {
         return image
     }
 }
+
+// MARK: Favorite charactes
+extension PortalGunManager {
+    func updateFavoriteStatus(for character: RMCharacter) async throws -> RMCharacter {
+        try await favoriteCharacterCache.store(character)
+    }
+}
