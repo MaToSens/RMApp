@@ -40,6 +40,5 @@ struct CharacterCellView: View {
                     .padding()
             }
         }
-     
     }
 }

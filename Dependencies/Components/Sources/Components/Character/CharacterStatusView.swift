@@ -5,6 +5,7 @@
 //  Created by MaTooSens on 22/02/2024.
 //
 
+import Design
 import PortalGunInterface
 import SwiftUI
 
