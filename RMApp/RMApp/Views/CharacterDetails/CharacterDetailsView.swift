@@ -28,6 +28,8 @@ struct CharacterDetailsView: View {
                 )
                 
                 buildCharacterDetailView()
+                
+                buildEpisodesView()
             }
         }
         .ignoresSafeArea(edges: .top)
@@ -71,6 +73,19 @@ struct CharacterDetailsView: View {
         }
         .padding(.horizontal)
         .frame(maxWidth: .infinity, alignment: .leading)
+    }
+    
+    private func buildEpisodesView() -> some View {
+        VStack(alignment: .leading)  {
+            Divider()
+            
+            Text("Episodes".uppercased())
+                .font(.headline)
+                .fontWeight(.heavy)
+            
+            EpisodeListView(viewModel.character)
+        }
+        .padding()
     }
 }
 
