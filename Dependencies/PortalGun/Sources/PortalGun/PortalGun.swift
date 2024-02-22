@@ -19,5 +19,6 @@ public struct Dependencies {
         Assemblies.inject(type: PortalGunManagerInterface.self, object: PortalGunManager())
         Assemblies.inject(type: CharactersDataProviderInterface.self, object: CharactersDataProvider())
         Assemblies.inject(type: CharacterImageDataProviderInterface.self, object: CharacterImageDataProvider())
+        Assemblies.inject(type: CharacterEpisodeDataProviderInterface.self, object: CharacterEpisodeDataProvider())
     }
 }

@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  CharactersDataProvider.swift
 //  
 //
 //  Created by MaTooSens on 22/02/2024.

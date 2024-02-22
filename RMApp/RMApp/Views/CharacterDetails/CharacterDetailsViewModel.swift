@@ -24,6 +24,7 @@ final class CharacterDetailsViewModel: ObservableObject {
     func heartButtonIsTapped() {
         Task {
             do {
+                // TODO: Update status
                 self.character = try await portalGunManager.updateFavoriteStatus(for: character)
             } catch {
                 self.showAlert = true

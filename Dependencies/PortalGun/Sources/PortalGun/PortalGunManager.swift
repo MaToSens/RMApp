@@ -15,6 +15,7 @@ final class PortalGunManager: PortalGunManagerInterface {
     @Inject private var fileStorageManager: FileStorageManagerInterface
     @Inject private var charactersDataProvider: CharactersDataProviderInterface
     @Inject private var characterImageDataProvider: CharacterImageDataProviderInterface
+    @Inject private var characterEpisodeDataProvider: CharacterEpisodeDataProviderInterface
     
     private let charactersCache = Cache<[RMCharacter]>(method: .inMemory)
     private let favoriteCharacterCache = Cache<[Int: RMCharacter]>(method: .onDisk)
@@ -97,6 +98,15 @@ extension PortalGunManager {
 // MARK: Favorite charactes
 extension PortalGunManager {
     func updateFavoriteStatus(for character: RMCharacter) async throws -> RMCharacter {
-        try await favoriteCharacterCache.store(character)
+        let updatedCharacter = try await favoriteCharacterCache.store(character)
+        try await charactersCache.store([updatedCharacter])
+        return updatedCharacter
+    }
+}
+
+// MARK: Fetch episodes
+extension PortalGunManager {
+    func fetchEpisodes(_ character: RMCharacter) async throws -> [RMEpisode] {
+        try await characterEpisodeDataProvider.fetchCharacterEpisodes(character: character)
     }
 }
