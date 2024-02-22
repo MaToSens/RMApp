@@ -9,11 +9,8 @@ import Foundation
 
 public protocol ClientInterface {
     func fetch(urlString: String) async throws -> Data
-    
-    func fetch<Endpoint: EndpointInterface, Response: Decodable>(
-        _ baseURLString: String,
-        endpoint: Endpoint
-    ) async throws -> Response
+    func fetch<Endpoint: EndpointInterface, Response: Decodable>(endpoint: Endpoint) async throws -> Response
+    func fetchObjects<Endpoint: EndpointInterface, Response: Decodable>(endpoint: Endpoint) async throws -> [Response]
 }
 
 public protocol EndpointInterface {
