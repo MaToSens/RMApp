@@ -20,7 +20,7 @@ struct CharacterCellView: View {
         VStack {
             buildCharacteImageView()
             
-            buildCharacterDetails()
+            CharacterStatusView(character, relativeTo: .footnote)
         }
         .padding(.vertical, 10)
     }
@@ -41,18 +41,5 @@ struct CharacterCellView: View {
             }
         }
      
-    }
-    
-    private func buildCharacterDetails() -> some View {
-        HStack  {
-            Circle()
-                .foregroundColor(character.status.color)
-                .frame(width: 15, height: 15)
-            
-            Text(character.name)
-                .foregroundColor(.black)
-                .appFont(.semibold, relativeTo: .footnote)
-                .lineLimit(1)
-        }
     }
 }
