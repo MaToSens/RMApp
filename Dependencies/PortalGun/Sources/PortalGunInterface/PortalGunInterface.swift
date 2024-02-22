@@ -11,6 +11,7 @@ public protocol PortalGunManagerInterface {
     func fetchCharacters(page: Int) async throws -> [RMCharacter]
     func fetchCharacterImage(for character: RMCharacter) async throws -> UIImage
     func updateFavoriteStatus(for character: RMCharacter) async throws -> RMCharacter
+    func fetchEpisodes(_ character: RMCharacter) async throws -> [RMEpisode]
 }
 
 // MARK: Data Providers Interface
@@ -20,4 +21,8 @@ public protocol CharactersDataProviderInterface {
 
 public protocol CharacterImageDataProviderInterface {
     func fetchRemoteImage(for character: RMCharacter) async throws -> Data
+}
+
+public protocol CharacterEpisodeDataProviderInterface {
+    func fetchCharacterEpisodes(character: RMCharacter) async throws -> [RMEpisode]
 }
