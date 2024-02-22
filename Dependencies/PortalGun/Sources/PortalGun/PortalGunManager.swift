@@ -102,6 +102,10 @@ extension PortalGunManager {
         try await charactersCache.store([updatedCharacter])
         return updatedCharacter
     }
+    
+    func fetchFavoriteCharacter() async throws -> [RMCharacter] {
+        try await favoriteCharacterCache.getAll()
+    }
 }
 
 // MARK: Fetch episodes
