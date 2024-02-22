@@ -37,6 +37,10 @@
 		BDBDFF2B2B871573008D2062 /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DBDAD2B86D74700E349CA /* CharacterListViewModel.swift */; };
 		BDBDFF2C2B871576008D2062 /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DBDAF2B86D85C00E349CA /* CharacterListView.swift */; };
 		BDBDFF2D2B871579008D2062 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD01AE872B86F0F50094953C /* MainView.swift */; };
+		BDBDFF392B871B3F008D2062 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBDFF382B871B3F008D2062 /* FavoriteView.swift */; };
+		BDBDFF3A2B871B3F008D2062 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBDFF382B871B3F008D2062 /* FavoriteView.swift */; };
+		BDBDFF3C2B871B44008D2062 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBDFF3B2B871B44008D2062 /* FavoriteViewModel.swift */; };
+		BDBDFF3D2B871B44008D2062 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBDFF3B2B871B44008D2062 /* FavoriteViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +61,8 @@
 		BD6DBDAF2B86D85C00E349CA /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
 		BD6DBDB22B86E8D300E349CA /* CharacterDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewModel.swift; sourceTree = "<group>"; };
 		BD6DBDB42B86E8DF00E349CA /* CharacterDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsView.swift; sourceTree = "<group>"; };
+		BDBDFF382B871B3F008D2062 /* FavoriteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		BDBDFF3B2B871B44008D2062 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +166,7 @@
 				BD6DBDAC2B86D73D00E349CA /* CharacterList */,
 				BD6DBDB12B86E8B800E349CA /* CharacterDetails */,
 				BD01AE892B870FB50094953C /* Episode */,
+				BDBDFF352B871B18008D2062 /* Favorite */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,6 +187,15 @@
 				BD6DBDB22B86E8D300E349CA /* CharacterDetailsViewModel.swift */,
 			);
 			path = CharacterDetails;
+			sourceTree = "<group>";
+		};
+		BDBDFF352B871B18008D2062 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				BDBDFF382B871B3F008D2062 /* FavoriteView.swift */,
+				BDBDFF3B2B871B44008D2062 /* FavoriteViewModel.swift */,
+			);
+			path = Favorite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,8 +310,10 @@
 				BD01AE8D2B87100C0094953C /* EpisodeListViewModel.swift in Sources */,
 				BD01AE962B8711D40094953C /* EpisodeView.swift in Sources */,
 				BD6DBDB02B86D85C00E349CA /* CharacterListView.swift in Sources */,
+				BDBDFF3C2B871B44008D2062 /* FavoriteViewModel.swift in Sources */,
 				BD6DBDAE2B86D74700E349CA /* CharacterListViewModel.swift in Sources */,
 				BD6DBDB52B86E8DF00E349CA /* CharacterDetailsView.swift in Sources */,
+				BDBDFF392B871B3F008D2062 /* FavoriteView.swift in Sources */,
 				BD6DBD9A2B86322100E349CA /* Assembly.swift in Sources */,
 				BD6DBD9C2B86322A00E349CA /* AssemblyShared.swift in Sources */,
 				BD6DBD7A2B862EE900E349CA /* RMAppApp.swift in Sources */,
@@ -313,8 +331,10 @@
 				BDBDFF292B87156E008D2062 /* CharacterDetailsViewModel.swift in Sources */,
 				BD6DBDA02B86325E00E349CA /* AssemblyMocks.swift in Sources */,
 				BDBDFF282B871569008D2062 /* EpisodeListViewModel.swift in Sources */,
+				BDBDFF3D2B871B44008D2062 /* FavoriteViewModel.swift in Sources */,
 				BD6DBDA12B86326100E349CA /* AssemblyShared.swift in Sources */,
 				BD6DBD8F2B86320200E349CA /* RMAppApp.swift in Sources */,
+				BDBDFF3A2B871B3F008D2062 /* FavoriteView.swift in Sources */,
 				BDBDFF272B87155B008D2062 /* EpisodeCellView.swift in Sources */,
 				BDBDFF262B871552008D2062 /* EpisodeView.swift in Sources */,
 				BDBDFF2B2B871573008D2062 /* CharacterListViewModel.swift in Sources */,
