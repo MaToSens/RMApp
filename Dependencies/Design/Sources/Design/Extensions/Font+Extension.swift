@@ -7,6 +7,12 @@
 
 import SwiftUI
 
+public enum JakartaSans: String, CaseIterable {
+    case medium = "PlusJakartaSans-Medium"
+    case semibold = "PlusJakartaSans-SemiBold"
+    case bold    = "PlusJakartaSans-Bold"
+}
+
 extension Font.TextStyle {
     var size: CGFloat {
         switch self {
@@ -27,7 +33,7 @@ extension Font.TextStyle {
 }
 
 extension Font {
-    static func appFont(relativeTo style: Font.TextStyle) -> Font {
-        custom("RMFont", size: style.size, relativeTo: style)
+    static func appFont(_ font: JakartaSans, relativeTo style: Font.TextStyle) -> Font {
+        custom(font.rawValue, size: style.size, relativeTo: style)
     }
 }

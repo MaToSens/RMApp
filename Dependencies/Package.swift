@@ -14,14 +14,16 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(path: "PortalGun")
+        .package(path: "PortalGun"),
+        .package(path: "Components")
     ],
     targets: [
         .target(
             name: "Dependencies",
             dependencies: [
                 .product(name: "PortalGun", package: "PortalGun"),
-                .product(name: "PortalGunMocks", package: "PortalGun")
+                .product(name: "PortalGunMocks", package: "PortalGun"),
+                .product(name: "Components", package: "Components")
             ]
         )
     ]

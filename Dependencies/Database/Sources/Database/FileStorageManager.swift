@@ -25,7 +25,6 @@ final class FileStorageManager: FileStorageManagerInterface {
             withExtension: fileExtension
         )
         
-        print("Save - fileURL: ", fileURL)
         do {
             try data.write(to: fileURL)
         } catch {

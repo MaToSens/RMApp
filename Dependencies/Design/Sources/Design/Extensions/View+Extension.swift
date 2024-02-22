@@ -8,17 +8,20 @@
 import SwiftUI
 
 struct AppFontModifier: ViewModifier {
+    let font: JakartaSans
     let style: Font.TextStyle
 
     func body(content: Content) -> some View {
         content
-            .font(.appFont(relativeTo: style))
+            .font(.appFont(font, relativeTo: style))
     }
 }
 
 public extension View {
-    func appFont(relativeTo style: Font.TextStyle = .body
+    func appFont(
+        _ font: JakartaSans = .medium,
+        relativeTo style: Font.TextStyle = .body
     ) -> some View {
-        ModifiedContent(content: self, modifier: AppFontModifier(style: style))
+        ModifiedContent(content: self, modifier: AppFontModifier(font: font, style: style))
     }
 }
